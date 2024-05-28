@@ -7,7 +7,7 @@ class TestCalcularPromedioPonderado(unittest.TestCase):
         #Entrada de datos
         Datos = ([])
         Peso = ([])
-        resultado = calcular.PromedioPonderado(Datos, Peso)
+        resultado = calcular.PromedioPonderado()
         self.assertAlmostEqual(resultado, None, 1)
 
 if __name__=='__main__':
