@@ -5,10 +5,10 @@ class TestCalcularPromedioPonderado(unittest.TestCase):
     def test_promedio_ponderado(self):
         calcular = CalcularPromedioPonderado()
         #Entrada de datos
-        Datos = ([])
-        Peso = ([])
-        resultado = calcular.PromedioPonderado()
-        self.assertAlmostEqual(resultado, None, 1)
+        Datos = [10, 12, 14] 
+        Pesos = [3, 4]
+        resultado = calcular.PromedioPonderado(Datos,Pesos)
+        self.assertAlmostEqual(resultado, 11.78, 2)
 
 if __name__=='__main__':
     unittest.main()
