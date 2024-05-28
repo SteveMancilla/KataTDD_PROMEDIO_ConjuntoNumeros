@@ -16,6 +16,13 @@ class TestCalcularPromedioPonderado(unittest.TestCase):
         pesos = []
         with self.assertRaises(ValueError):
             calcular.PromedioPonderado(datos, pesos)
+    
+    def test_longitudes_diferentes(self):
+        calcular = CalcularPromedioPonderado()
+        datos = [15, 15, 17]
+        pesos = [3, 4, 2, 5, 9]
+        
+        resultado = calcular.PromedioPonderado(datos, pesos)
 
 if __name__=='__main__':
     unittest.main()
