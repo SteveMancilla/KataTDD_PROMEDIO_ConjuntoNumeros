@@ -6,7 +6,7 @@ class TestCalcularPromedioPonderado(unittest.TestCase):
         calcular = CalcularPromedioPonderado()
         #Entrada de datos
         Datos = [10, 12, 14] 
-        Pesos = [3, 4]
+        Pesos = [3, 4, 2]
         resultado = calcular.PromedioPonderado(Datos,Pesos)
         self.assertAlmostEqual(resultado, 11.78, 2)
 
