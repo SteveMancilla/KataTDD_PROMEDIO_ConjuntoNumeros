@@ -24,6 +24,13 @@ class TestCalcularPromedioPonderado(unittest.TestCase):
         
         with self.assertRaises(ValueError):
             calcular.PromedioPonderado(datos, pesos)
+    
+    def test_segunda_prueba_datos_ppts(self):
+        calcular = CalcularPromedioPonderado()
+        datos = [15, 15, 17]
+        pesos = [3, 4, 2]
+        resultado = calcular.PromedioPonderado(datos, pesos)
+        self.assertAlmostEqual(resultado, 15.44, 2)
 
 if __name__=='__main__':
     unittest.main()
